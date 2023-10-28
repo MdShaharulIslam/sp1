@@ -1,0 +1,354 @@
+/*======= common area ======== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h3 {
+    font-family: "Alfa Slab One", cursive;
+    text-transform: uppercase;
+    color: #3d2514;
+}
+
+h5,
+h2,
+h4,
+h6,
+a {
+    font-family: "Bebas Neue", cursive;
+}
+
+.c-btn {
+    font-family: "Alfa Slab One", cursive;
+    text-transform: uppercase;
+    background-color: #bf2222 !important;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.c-btn:hover {
+    background-color: #bf2222 !important;
+    outline: 0 !important;
+    color: #ffc657 !important;
+}
+
+.c-btn:focus {
+    box-shadow: none !important;
+}
+
+#hero,
+#popular,
+#chose,
+#events,
+#contact,
+#footer {
+    padding-top: 140px;
+}
+
+#head {
+    padding-top: 1rem;
+    background-color: #ffc657;
+}
+
+.navbar-expand-md {
+    justify-content: space-between !important;
+}
+
+.delivery {
+    text-align: end;
+}
+
+.menu li:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
+.menu li a {
+    padding-right: 0 !important;
+    letter-spacing: 3.5px;
+}
+
+.navbar-toggler {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.navbar-toggler span {
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #3d2514;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.middle-bar {
+    margin-top: 0;
+}
+
+.navbar-toggler .top-bar {
+    margin-top: 0;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    margin-top: 0;
+    transform: rotate(-135deg);
+}
+
+.navbar-toggler.collapsed .top-bar {
+    margin-top: -20px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    margin-top: 20px;
+    transform: rotate(0deg);
+}
+
+#hero {
+    background-color: #ffc657;
+}
+
+.hero-left h6 {
+    padding: 2px 5px;
+    font-size: 23px;
+    border: 1px dashed;
+}
+
+.hero-left h1 {
+    font-size: 100px;
+}
+
+.hero-left h3 {
+    font-size: 57px;
+}
+
+.img-fluid.price-br {
+    position: absolute;
+    left: 10rem;
+    bottom: 8rem;
+    height: 15vh;
+}
+
+.hero-right {
+    position: relative;
+}
+
+.chose-head h5 {
+    margin: 0 auto;
+    padding: 3px 7px;
+    width: max-content;
+    background-color: #ffc657;
+}
+
+.popular-wrapper h6 {
+    margin: 0 !important;
+}
+
+.popular-left {
+    position: relative;
+}
+
+.popular-left-content {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: #fff;
+}
+
+.popular-right-up {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.popular-right-down {
+    position: relative;
+    margin-top: 1rem;
+}
+
+.popular-right-up-content,
+.popular-right-down-content {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: #fff;
+}
+
+.chose-head h1 {
+    padding: 1rem 0;
+}
+
+.chose-head p {
+    padding-bottom: 2rem;
+}
+
+.chose-item h1 {
+    font-family: "Bebas Neue", cursive;
+}
+
+.events-wrapper {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    padding: 1rem 1rem 1rem 2rem;
+}
+
+.s_content h1 {
+    margin: 0 !important;
+    font-family: "Bebas Neue", cursive;
+}
+
+.carousel-indicators {
+    width: max-content;
+    margin-left: 0 !important;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #dcdcdc;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active {
+    background: #ffc657;
+    background-clip: padding-box;
+}
+
+#contact {
+    position: relative;
+}
+
+.contact-head {
+    margin-bottom: 30px;
+}
+
+.contact-left-up-content {
+    position: absolute;
+    top: 0;
+    margin-left: -780px;
+    z-index: -1;
+    width: 100%;
+}
+
+.contact-right-content {
+    position: absolute;
+    bottom: -11rem;
+    z-index: -1;
+    right: 0;
+    float: right;
+}
+
+.contact-left-up-content img {
+    width: 70%;
+    float: left;
+    left: 0;
+}
+
+.contact-left-down-content img {
+    width: 50%;
+}
+
+.contact-field input {
+    font-family: "Bebas Neue", cursive;
+    color: #3d3d3d;
+}
+
+.contact-field input:focus {
+    outline: 0;
+}
+
+.contact-field input,
+.contact-field button {
+    margin-bottom: 15px;
+    padding: 5px 10px;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+footer {
+    font-family: "Bebas Neue", cursive;
+    color: #fff;
+}
+
+.footer-wrapper {
+    background: url(../img/foter.gif) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer-left a img {
+    height: 10vh;
+}
+
+.footer-left p {
+    font-family: "Montserrat", sans-serif !important;
+}
+
+.footer-wrapper {
+    padding-top: 100px;
+}
+
+.footer-left {
+    padding-left: 2rem;
+}
+
+.footer-left p {
+    padding: 2rem 0;
+}
+
+.footer-right {
+    padding-right: 1rem;
+}
+
+.footer-right span {
+    margin-left: 1rem;
+}
+
+.footer-social {
+    padding-top: 5rem;
+    text-align: end;
+}
+
+.footer-social ul li a {
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+    font-size: 25px;
+}
+
+.footer-social ul li a i:hover {
+    color: #ffc657;
+}
